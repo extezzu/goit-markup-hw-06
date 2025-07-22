@@ -365,9 +365,12 @@ section {
 }
 
 /* ======================== section-portfolio #4 === */
+.section-portfolio {
+    padding: 0;
+}
 
 .portfolio-title {
-    margin-bottom: 72px;
+    margin: 96px 0 72px 0;
 }
 
 .portfolio-list {
@@ -375,11 +378,14 @@ section {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    justify-content: center;
+    padding-bottom: 96px;
 }
 
 .portfolio-item {
     background-color: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 288px;
 }
 
 .portfolio-image {
