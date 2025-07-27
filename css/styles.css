@@ -237,9 +237,12 @@ p {
     }
 
     .logo {
-        margin-right: 120px;
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+
+    .header-logo {
+        margin-right: 120px;
     }
 
     .head-nav-list {
@@ -260,7 +263,7 @@ p {
 
     .nav-link.current {
         position: relative;
-        color: var(--pressed-state);
+        color: var(--primary-brand);
     }
 
     .nav-link.current::after {
@@ -427,6 +430,10 @@ p {
     transition: color var(--transition);
 }
 
+.current {
+    color: var(--pressed-state);
+}
+
 .mob-address-link:hover,
 .mob-address-link:focus {
     color: var(--primary-brand);
@@ -498,7 +505,7 @@ p {
     padding: 72px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                     url("../images/Solutions-mob.jpg");
+                        url("../images/Solutions-mob.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -581,6 +588,12 @@ p {
 
 .advant-name {
     margin-bottom: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--font-weight-700);
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .text-advant {
@@ -604,6 +617,7 @@ p {
 
     .advant-list {
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 72px 24px;
     }
 
@@ -677,6 +691,12 @@ p {
 .team-title {
     text-align: center;
     margin-bottom: 8px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .team-text {
@@ -830,6 +850,8 @@ p {
 
 .foot-logo {
     display: inline-block;
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 .foot-logo-part,
@@ -930,7 +952,6 @@ p {
 
     .foot-logo {
         padding-top: 0;
-        padding-bottom: 16px;
     }
 
     .foot-right {
@@ -989,6 +1010,12 @@ p {
     visibility: hidden;
     pointer-events: none;
     transition: opacity var(--transition), visibility var(--transition);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
